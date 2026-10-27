@@ -356,4 +356,5 @@ export const externalLinks = {
   medium: 'https://medium.com/@mithran.daev',
   linkedin: 'https://www.linkedin.com/in/daev-mithran-30b314158',
   email: 'mailto:mithran.daev@gmail.com',
+  calendly: 'https://calendly.com/mithran-daev/30min',
 }

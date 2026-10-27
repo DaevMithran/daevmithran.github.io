@@ -49,11 +49,12 @@ function ThemePicker({ theme, setTheme }: { theme: ThemeName; setTheme: (value: 
   )
 }
 
-function SocialIcon({ type }: { type: 'github' | 'linkedin' | 'medium' | 'email' }) {
+function SocialIcon({ type }: { type: 'github' | 'linkedin' | 'medium' | 'email' | 'calendar' }) {
   if (type === 'github') return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8a9.2 9.2 0 0 0-2.9 17.9c.5.1.6-.2.6-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 0 1.6 1.1 1.6 1.1.9 1.6 2.4 1.1 2.9.9.1-.7.4-1.1.7-1.3-2.2-.3-4.6-1.1-4.6-4.6 0-1 .4-1.9 1-2.5-.1-.3-.4-1.3.1-2.5 0 0 .8-.3 2.5 1a8.8 8.8 0 0 1 4.6 0c1.8-1.2 2.5-1 2.5-1 .5 1.2.2 2.2.1 2.5.6.7 1 1.5 1 2.5 0 3.5-2.4 4.3-4.6 4.6.4.3.7.9.7 1.7v2.6c0 .4.2.6.7.5A9.2 9.2 0 0 0 12 2.8Z" /></svg>
   if (type === 'linkedin') return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.2 8.8v10M5.2 5.3v.1M9.7 18.8v-10M9.7 13.1c0-2.4 1.4-4.1 3.8-4.1 2.8 0 4 1.8 4 4.8v5" /></svg>
   if (type === 'medium') return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 6.3h4.1l4.8 10.8 4.3-10.8h3.8M5.5 6.3v11.4M18.4 6.3v11.4M3.5 17.7h4M16.4 17.7h4" /></svg>
-  return <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.2" y="5.3" width="17.6" height="13.4" rx="2" /><path d="m4.2 7 7.8 6 7.8-6" /></svg>
+  if (type === 'email') return <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.2" y="5.3" width="17.6" height="13.4" rx="2" /><path d="m4.2 7 7.8 6 7.8-6" /></svg>
+  return <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2" /><path d="M7.5 3v4M16.5 3v4M3.5 9h17M8 13h.01M12 13h.01M16 13h.01M8 17h.01M12 17h.01" /></svg>
 }
 
 function Header({ theme, setTheme }: { theme: ThemeName; setTheme: (value: ThemeName) => void }) {
@@ -65,6 +66,7 @@ function Header({ theme, setTheme }: { theme: ThemeName; setTheme: (value: Theme
         <a href={externalLinks.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn" title="LinkedIn"><SocialIcon type="linkedin" /></a>
         <a href={externalLinks.medium} target="_blank" rel="noreferrer" aria-label="Medium" title="Medium"><SocialIcon type="medium" /></a>
         <a href={externalLinks.email} aria-label="Email" title="Email"><SocialIcon type="email" /></a>
+        <a href={externalLinks.calendly} target="_blank" rel="noreferrer" aria-label="Book a call on Calendly" title="Book a call"><SocialIcon type="calendar" /></a>
       </nav>
       <div className="header-tools">
         <ThemePicker theme={theme} setTheme={setTheme} />
