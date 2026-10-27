@@ -158,11 +158,11 @@ function PublicIcon({ type }: { type: 'code' | 'speak' | 'write' }) {
 }
 
 const workingSet = [
-  { label: 'Languages', items: ['Go', 'Rust', 'TypeScript', 'JavaScript'] },
-  { label: 'Identity', items: ['DIDs', 'Verifiable Credentials', 'OAuth / OIDC', 'OpenID4VC', 'DIDComm', 'AnonCreds', 'SD-JWT', 'mDoc'] },
+  { label: 'Languages', items: ['Go', 'Rust', 'TypeScript', 'Python'] },
+  { label: 'Identity', items: ['DIDs', 'Verifiable Credentials', 'OAuth', 'GNAP', 'OpenID4VC', 'AnonCreds', 'SD-JWT'] },
   { label: 'Distributed systems', items: ['Cosmos SDK', 'Tendermint', 'Polkadot', 'Substrate', 'Hyperledger'] },
-  { label: 'Payments & security', items: ['EMV', 'HSMs', 'MPC', 'Key management', 'Applied cryptography'] },
-  { label: 'AI agents', items: ['OpenClaw', 'MCP', 'Context retrieval', 'AGNES clustering'] },
+  { label: 'Payments & security', items: ['EMV', 'HSMs', 'MPC', 'Stripe', 'Key management', 'Applied cryptography'] },
+  { label: 'Backend & infrastructure', items: ['gRPC', 'REST APIs', 'Kafka', 'Docker', 'AWS', 'Cloudflare'] },
 ]
 
 function HomePage() {
