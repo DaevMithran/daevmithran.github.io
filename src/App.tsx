@@ -157,6 +157,14 @@ function PublicIcon({ type }: { type: 'code' | 'speak' | 'write' }) {
   return <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M12 7h20l5 5v29H12Z" /><path d="M32 7v6h5M18 21h13M18 27h13M18 33h8" /></svg>
 }
 
+const workingSet = [
+  { label: 'Languages', items: ['Go', 'Rust', 'TypeScript', 'JavaScript'] },
+  { label: 'Identity', items: ['DIDs', 'Verifiable Credentials', 'OAuth / OIDC', 'OpenID4VC', 'DIDComm', 'AnonCreds', 'SD-JWT', 'mDoc'] },
+  { label: 'Distributed systems', items: ['Cosmos SDK', 'Tendermint', 'Polkadot', 'Substrate', 'Hyperledger'] },
+  { label: 'Payments & security', items: ['EMV', 'HSMs', 'MPC', 'Key management', 'Applied cryptography'] },
+  { label: 'AI agents', items: ['OpenClaw', 'MCP', 'Context retrieval', 'AGNES clustering'] },
+]
+
 function HomePage() {
   const featured = projects.filter((project) => project.featured)
   return (
@@ -177,8 +185,18 @@ function HomePage() {
         <div className="section-link"><Link href="/work">View the complete work index →</Link></div>
       </section>
 
+      <section className="skills-section" id="skills">
+        <header className="skills-heading">
+          <div><span className="section-index">03 / WORKING SET</span><h2>Tools & protocols</h2></div>
+          <p>The technologies I use across production systems, open-source work and experiments.</p>
+        </header>
+        <div className="skills-list">
+          {workingSet.map((group) => <div className="skill-row" key={group.label}><h3>{group.label}</h3><div>{group.items.map((item) => <span key={item}>{item}</span>)}</div></div>)}
+        </div>
+      </section>
+
       <section className="public-section" id="public-work">
-        <span className="section-index">03 / PUBLIC PRACTICE</span>
+        <span className="section-index">04 / PUBLIC PRACTICE</span>
         <div className="public-grid">
           <article><div className="public-card-top"><span>01</span><PublicIcon type="code" /></div><h3>Open source</h3><p>Specifications, upstream integrations and tools across OpenWallet Foundation, OpenClaw, Cosmos and Polkadot ecosystems.</p><a href={externalLinks.github} target="_blank" rel="noreferrer">Browse GitHub ↗</a></article>
           <article><div className="public-card-top"><span>02</span><PublicIcon type="speak" /></div><h3>Speaking</h3><p>Selected UbuCon 2026 speaker on bounded authorization for autonomous agents, with more talks to come.</p><Link href="/journey#recognition">See recognition →</Link></article>
@@ -187,7 +205,7 @@ function HomePage() {
       </section>
 
       <section className="journey-cta">
-        <div><span className="section-index">04 / THE THREAD</span><h2>There’s a thread through all of it.</h2></div>
+        <div><span className="section-index">05 / THE THREAD</span><h2>There’s a thread through all of it.</h2></div>
         <div className="journey-cta-copy"><span className="journey-years">2016 — now</span><p>Physics, identity, distributed systems, payments and agents aren’t separate chapters. The journey shows how one question kept leading to the next.</p><Link href="/journey" className="button primary">Follow the full journey →</Link></div>
       </section>
     </main>
