@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#101a15"/>
+  <g stroke="#293b31" stroke-width="2"><path d="M0 112H1200M0 225H1200M0 338H1200M0 450H1200M0 563H1200"/><path d="M200 0V675M400 0V675M600 0V675M800 0V675M1000 0V675"/></g>
+  <rect x="120" y="194" width="410" height="286" rx="28" fill="#eef3e9"/>
+  <rect x="174" y="265" width="92" height="72" rx="8" fill="#ff8d5c"/><path d="M174 300H266M220 265V337" stroke="#101a15" stroke-width="3"/>
+  <circle cx="447" cy="270" r="19" fill="#82f4af"/><circle cx="404" cy="270" r="19" fill="#ff8d5c" opacity=".78"/>
+  <text x="174" y="410" fill="#101a15" font-family="monospace" font-size="24">EMV PAYMENT CARD</text>
+  <path d="M530 338H690" stroke="#eef3e9" stroke-width="4" stroke-dasharray="13 13"/>
+  <rect x="690" y="225" width="360" height="226" rx="28" fill="#82f4af"/>
+  <path d="M808 314v-34a62 62 0 0 1 124 0v34" fill="none" stroke="#101a15" stroke-width="13"/><rect x="782" y="308" width="176" height="96" rx="12" fill="#101a15"/>
+  <text x="870" y="368" fill="#eef3e9" font-family="monospace" font-size="25" text-anchor="middle">HSM</text>
+</svg>

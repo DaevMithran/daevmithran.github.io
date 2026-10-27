@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#101a15"/><path d="M0 112H1200M0 225H1200M0 338H1200M0 450H1200M0 563H1200M200 0V675M400 0V675M600 0V675M800 0V675M1000 0V675" stroke="#293b31"/>
+  <circle cx="268" cy="338" r="115" fill="#82f4af"/><circle cx="932" cy="338" r="115" fill="#ff8d5c"/><path d="M383 338H817" stroke="#eef3e9" stroke-width="4" stroke-dasharray="14 14"/><rect x="515" y="268" width="170" height="140" fill="#eef3e9"/><text x="600" y="328" fill="#112018" font-family="monospace" font-size="22" text-anchor="middle">BOUNDED</text><text x="600" y="360" fill="#112018" font-family="monospace" font-size="22" text-anchor="middle">GRANT</text>
+  <text x="268" y="347" fill="#112018" font-family="monospace" font-size="28" text-anchor="middle">AGENT</text><text x="932" y="347" fill="#112018" font-family="monospace" font-size="28" text-anchor="middle">RESOURCE</text>
+</svg>

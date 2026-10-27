@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Contexto hierarchical context engine</title>
+  <desc id="desc">Clusters of context connected as a branching tree</desc>
+  <rect width="1200" height="680" fill="#13211c"/>
+  <g fill="none" stroke="#88b8a6" stroke-width="3" opacity=".72">
+    <path d="M600 535V420M600 420L360 285M600 420L840 285M360 285L235 155M360 285L480 155M840 285L720 155M840 285L965 155"/>
+  </g>
+  <g fill="#f5f1e8" stroke="#88b8a6" stroke-width="4">
+    <circle cx="600" cy="535" r="58"/><circle cx="600" cy="420" r="45"/>
+    <circle cx="360" cy="285" r="52"/><circle cx="840" cy="285" r="52"/>
+    <circle cx="235" cy="155" r="38"/><circle cx="480" cy="155" r="38"/>
+    <circle cx="720" cy="155" r="38"/><circle cx="965" cy="155" r="38"/>
+  </g>
+  <g fill="#13211c" font-family="ui-monospace, monospace" text-anchor="middle">
+    <text x="600" y="541" font-size="25">AGENT</text><text x="600" y="426" font-size="18">ROOT</text>
+    <text x="360" y="291" font-size="18">CONTEXT</text><text x="840" y="291" font-size="18">MEMORY</text>
+  </g>
+  <text x="70" y="620" fill="#f5f1e8" font-family="ui-monospace, monospace" font-size="22" letter-spacing="5">CONTEXT TREE · AGNES</text>
+</svg>

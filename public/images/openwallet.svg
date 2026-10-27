@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">OpenWallet Foundation interoperability</title>
+  <desc id="desc">An open wallet connecting identity credentials across systems</desc>
+  <rect width="1200" height="680" fill="#dceae4"/>
+  <g fill="none" stroke="#175c4a" stroke-width="4">
+    <rect x="370" y="145" width="460" height="390" rx="54"/>
+    <path d="M430 145V104h310c50 0 90 40 90 90v28M740 304h160v112H740c-31 0-56-25-56-56s25-56 56-56Z"/>
+    <circle cx="765" cy="360" r="14"/>
+    <path d="M370 265H185M830 265h185M370 430H185M830 430h185" stroke-dasharray="10 10"/>
+  </g>
+  <g fill="#175c4a" font-family="ui-monospace, monospace" text-anchor="middle">
+    <text x="600" y="255" font-size="24">OPEN WALLET</text><text x="600" y="287" font-size="15" letter-spacing="4">INTEROPERABILITY</text>
+    <text x="185" y="250" font-size="17">DID</text><text x="1015" y="250" font-size="17">VC</text>
+    <text x="185" y="455" font-size="17">CREDO</text><text x="1015" y="455" font-size="17">CHEQD</text>
+  </g>
+</svg>

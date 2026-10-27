@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">OpenClaw plugin runtime</title>
+  <desc id="desc">A central agent runtime connected to extensible plugins</desc>
+  <rect width="1200" height="680" fill="#f3e7de"/>
+  <g fill="none" stroke="#bd634c" stroke-width="4">
+    <path d="M600 340H225M600 340H975M600 340V120M600 340V560"/>
+    <circle cx="600" cy="340" r="124"/><rect x="115" y="270" width="220" height="140" rx="70"/>
+    <rect x="865" y="270" width="220" height="140" rx="70"/><rect x="490" y="55" width="220" height="130" rx="65"/>
+    <rect x="490" y="495" width="220" height="130" rx="65"/>
+  </g>
+  <g fill="#18231f" font-family="ui-monospace, monospace" text-anchor="middle">
+    <text x="600" y="332" font-size="27">OPENCLAW</text><text x="600" y="369" font-size="17" letter-spacing="3">RUNTIME</text>
+    <text x="225" y="348" font-size="19">CONTEXT</text><text x="975" y="348" font-size="19">TOOLS</text>
+    <text x="600" y="128" font-size="19">PLUGINS</text><text x="600" y="568" font-size="19">AGENTS</text>
+  </g>
+</svg>

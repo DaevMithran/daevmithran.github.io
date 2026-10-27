@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#101a15"/>
+  <g stroke="#293b31" stroke-width="2"><path d="M0 112H1200M0 225H1200M0 338H1200M0 450H1200M0 563H1200"/><path d="M200 0V675M400 0V675M600 0V675M800 0V675M1000 0V675"/></g>
+  <circle cx="315" cy="338" r="142" fill="none" stroke="#82f4af" stroke-width="7"/><circle cx="315" cy="338" r="86" fill="#82f4af"/>
+  <g fill="#ff8d5c"><circle cx="315" cy="164" r="20"/><circle cx="164" cy="425" r="20"/><circle cx="466" cy="425" r="20"/></g>
+  <path d="M457 338H650" stroke="#eef3e9" stroke-width="4" stroke-dasharray="14 14"/>
+  <rect x="650" y="230" width="360" height="216" rx="24" fill="#eef3e9"/>
+  <text x="315" y="348" fill="#101a15" font-family="monospace" font-size="27" text-anchor="middle">CHEQD NODE</text>
+  <text x="830" y="300" fill="#101a15" font-family="monospace" font-size="24" text-anchor="middle">DID RESOLVER</text>
+  <path d="M720 338H940" stroke="#101a15" stroke-width="3"/><text x="830" y="390" fill="#195d49" font-family="monospace" font-size="22" text-anchor="middle">SDK · APPS</text>
+</svg>
