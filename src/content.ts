@@ -66,6 +66,7 @@ export const projects: Project[] = [
       { label: 'cheqd-node', href: 'https://github.com/cheqd/cheqd-node' },
       { label: 'did-resolver-rs', href: 'https://github.com/cheqd/did-resolver-rs' },
       { label: 'cheqd SDK', href: 'https://github.com/cheqd/sdk' },
+      { label: 'cheqd Studio', href: 'https://cheqd.io/solutions/cheqd-studio/' },
     ],
     sections: [
       { title: 'Overview', body: `For nearly four years at cheqd, I worked across the identity network, the products built on it and the open-source tools developers used to integrate it. My role moved between protocol engineering, applied cryptography, backend systems, SDKs and product delivery.
@@ -81,11 +82,37 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: 'national-blockchain-project',
+    title: 'National Blockchain Project',
+    eyebrow: 'Digital credentials · E-governance',
+    year: '2020 — 2022',
+    summary: 'Hyperledger-based credential infrastructure behind IIT Kanpur’s blockchain digital-degree pilot and wider e-governance work.',
+    image: '/images/national-blockchain-project.svg',
+    imageAlt: 'A digital degree credential connected to a permissioned blockchain network',
+    spokes: ['identity', 'distributed'],
+    technologies: ['Hyperledger Fabric', 'Hyperledger Indy', 'Aries', 'W3C VC'],
+    links: [
+      { label: 'IIT Kanpur digital-degree launch', href: 'https://www.techcircle.in/2021/12/28/pm-modi-launches-blockchain-based-digital-degrees-at-iit-kanpur' },
+      { label: 'Commit Twin protocol', href: 'https://github.com/DaevMithran/commit_twin' },
+      { label: 'National Blockchain Project on LinkedIn', href: 'https://www.linkedin.com/company/national-blockchain-project/' },
+      { label: 'Trential', href: 'https://trential.com/' },
+    ],
+    sections: [
+      { title: 'Overview', body: `At the National Blockchain Project at IIT Kanpur, I worked on public-sector credential infrastructure across permissioned blockchains, decentralized identity, backend services and privacy-preserving cryptography.
+
+- **Digital-degree pilot:** Worked on the blockchain platform used to issue IIT Kanpur’s digital degrees at its 54th convocation. The initiative was launched by Prime Minister Narendra Modi in December 2021 and made degrees independently verifiable and resistant to forgery.
+- **E-governance credentials:** Developed with Hyperledger Fabric, Indy and Aries, and built microservices for issuing, managing and verifying credentials through an e-governance platform.
+- **Anonymous e-voting:** Built and demonstrated a privacy-preserving voting flow using anonymous credentials. I used the Commit Twin protocol to prove in zero knowledge that two elliptic-curve commitments hide the same secret, with implementations in Go and Rust.
+- **Cryptography research:** Explored programmable zero-knowledge techniques based on CL signature schemes for selective disclosure and privacy-preserving identity flows.
+- **Continuing platform:** The broader credential work continues through Trential, whose platform supports W3C-aligned credential issuance, verification, wallets and enterprise integrations.` },
+    ],
+  },
+  {
     slug: 'interledger-emv-cards',
     title: 'EMV card infrastructure',
     eyebrow: 'Payments · Applied cryptography',
-    year: '2026 — now',
-    summary: 'Backend infrastructure for card provisioning and EMV payment flows, with HSM-backed cryptography, secure key architecture and gRPC services.',
+    year: 'May — Oct 2026',
+    summary: 'EMV and Open Payments infrastructure connecting POS terminals to Interledger through Go services and HSM-backed card cryptography.',
     image: '/images/interledger-emv.svg',
     imageAlt: 'An EMV payment card connected to an HSM and Interledger payment infrastructure',
     spokes: ['payments', 'opensource'],
@@ -98,7 +125,13 @@ export const projects: Project[] = [
       { label: 'Interledger Foundation', href: 'https://interledger.org/' },
     ],
     sections: [
-      { title: 'Overview', body: 'At the Interledger Foundation, I worked on backend infrastructure connecting familiar EMV card and point-of-sale flows to Rafiki and the Interledger network. I built Go and gRPC services around card provisioning, wallet integration and payment boundaries, with HSM-backed cryptography and a deliberate key architecture that keeps sensitive material out of ordinary application state. The wider design preserves the established EMV security model while adding the onboarding, APIs and cryptographic controls needed to route payments through Open Payments and Interledger.' },
+      { title: 'Overview', body: `At the Interledger Foundation, I built the payment and cryptographic infrastructure needed to connect established EMV card flows with Open Payments and the Interledger network without weakening the trust boundaries of the existing card ecosystem.
+
+- **EMV to Interledger:** Developed and integrated payment workflows that let POS terminals process EMV transactions through Interledger using Open Payments.
+- **Payment HSM integration:** Integrated a Thales Atalla AT1000 over PKCS11 and a custom protocol parser, with mTLS-secured connection pooling, health monitoring and failover for highly available cryptographic operations.
+- **Cryptography as a service:** Exposed HSM-backed operations to Go microservices through clear gRPC APIs, keeping sensitive key material behind a dedicated security boundary.
+- **Card-key architecture:** Designed the full key hierarchy, key ceremonies, derivation paths and secure key import/export flows in alignment with PCI DSS and PCI PIN requirements.
+- **Authorization services:** Implemented Issuer and Merchant API microservices in Go for EMV/TLV message parsing and card-transaction authorization flows.` },
     ],
   },
   {
@@ -321,7 +354,7 @@ export const timelines: TimelineGroup[] = [
     label: 'Experience',
     introduction: 'Production engineering across public infrastructure, identity networks and payment systems.',
     items: [
-      { period: 'Sep 2020 — Sep 2022', startYear: 2020, endYear: 2022, title: 'National Blockchain Project, IIT Kanpur', subtitle: 'Blockchain Engineer', detail: 'Hyperledger identity infrastructure, credential platforms and zero-knowledge cryptography research.' },
+      { period: 'Sep 2020 — Sep 2022', startYear: 2020, endYear: 2022, title: 'National Blockchain Project, IIT Kanpur', subtitle: 'Blockchain Engineer', detail: 'Hyperledger identity infrastructure, credential platforms and zero-knowledge cryptography research.', projectSlug: 'national-blockchain-project' },
       { period: 'Sep 2022 — Feb 2026', startYear: 2022, endYear: 2026, title: 'cheqd', subtitle: 'Blockchain Engineer', detail: 'Identity chain development, credential SDKs, payment rails and open-source ecosystem integrations.', projectSlug: 'cheqd-infrastructure' },
       { period: 'Mar — May 2026', startYear: 2026, endYear: 2027, title: 'Ekai Labs', subtitle: 'AI Infrastructure Engineer', detail: 'Agent context engines, framework evaluation, OpenClaw contributions and authentication systems.', projectSlug: 'contexto' },
       { period: 'May — Oct 2026', startYear: 2026, endYear: 2027, title: 'Interledger Foundation', subtitle: 'Golang Engineer', detail: 'EMV payment workflows, HSM-backed cryptography, gRPC services and secure key architecture.', projectSlug: 'interledger-emv-cards' },

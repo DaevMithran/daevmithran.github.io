@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#101a15"/>
+  <g fill="none" stroke="#293b31" stroke-width="2">
+    <path d="M0 112H1200M0 225H1200M0 338H1200M0 450H1200M0 563H1200"/>
+    <path d="M200 0V675M400 0V675M600 0V675M800 0V675M1000 0V675"/>
+  </g>
+  <g stroke="#82f4af" stroke-width="5" fill="#101a15">
+    <circle cx="205" cy="338" r="48"/><circle cx="365" cy="218" r="48"/><circle cx="365" cy="458" r="48"/>
+    <path d="M247 313 323 247M247 363l76 66"/>
+  </g>
+  <g fill="#82f4af"><circle cx="205" cy="338" r="12"/><circle cx="365" cy="218" r="12"/><circle cx="365" cy="458" r="12"/></g>
+  <path d="M414 338H545" stroke="#eef3e9" stroke-width="4" stroke-dasharray="13 13"/>
+  <rect x="545" y="164" width="455" height="347" rx="25" fill="#eef3e9"/>
+  <path d="M612 235h321M612 286h220M612 385h321M612 427h270" stroke="#195d49" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="855" cy="335" r="45" fill="#ff8d5c"/><path d="m835 335 14 14 28-31" fill="none" stroke="#101a15" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="205" y="423" fill="#eef3e9" font-family="monospace" font-size="22" text-anchor="middle">NBP</text>
+  <text x="772" y="478" fill="#101a15" font-family="monospace" font-size="22" text-anchor="middle">DIGITAL DEGREE</text>
+</svg>

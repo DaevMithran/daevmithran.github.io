@@ -158,11 +158,11 @@ function PublicIcon({ type }: { type: 'code' | 'speak' | 'write' }) {
 }
 
 const workingSet = [
-  { label: 'Languages', items: ['Go', 'Rust', 'TypeScript', 'Python'] },
-  { label: 'Identity', items: ['DIDs', 'Verifiable Credentials', 'OAuth', 'GNAP', 'OpenID4VC', 'AnonCreds', 'SD-JWT'] },
-  { label: 'Distributed systems', items: ['Cosmos SDK', 'Tendermint', 'Polkadot', 'Substrate', 'Hyperledger'] },
-  { label: 'Payments & security', items: ['EMV', 'HSMs', 'MPC', 'Stripe', 'Key management', 'Applied cryptography'] },
-  { label: 'Backend & infrastructure', items: ['gRPC', 'REST APIs', 'Kafka', 'Docker', 'AWS', 'Cloudflare'] },
+  { label: 'Languages', items: ['Go', 'Rust', 'TypeScript', 'Python', 'Kotlin'] },
+  { label: 'Identity', items: ['DIDs', 'W3C VCs', 'OAuth', 'GNAP', 'OpenID4VC', 'Keycloak', 'Logto', 'Supabase Auth'] },
+  { label: 'Distributed systems', items: ['Cosmos SDK', 'Ethereum', 'Solana', 'Polkadot', 'Substrate', 'Hyperledger'] },
+  { label: 'Payments & security', items: ['EMV', 'HSMs', 'PKCS#11', 'mTLS', 'MPC', 'Stripe', 'Key management'] },
+  { label: 'Backend & infrastructure', items: ['gRPC', 'REST APIs', 'Kafka', 'OpenSearch', 'CDC', 'PostgreSQL', 'Docker', 'AWS', 'Cloudflare'] },
 ]
 
 function HomePage() {
