@@ -196,9 +196,9 @@ export const projects: Project[] = [
       { label: 'OpenWallet Foundation', href: 'https://github.com/openwallet-foundation' },
     ],
     sections: [
-      { title: 'Credo TS', body: 'Contributions strengthened cheqd support in the TypeScript identity framework, including a released fix for revocation-registry-definition resource naming. This work lives in the same framework applications use for DIDs, verifiable credentials, DIDComm and OpenID4VC.' },
-      { title: 'ACA-Py', body: 'Python contributions extended the upstream agent ecosystem rather than keeping production fixes in private integration layers. The linked contribution history shows the individual merged and closed changes without turning this case study into a PR list.' },
-      { title: 'Why upstream matters', body: 'Maintaining network support in Credo TS and ACA-Py makes identity interoperability reusable across wallets, issuers and verifiers—and gives compatibility changes a public place to be reviewed and tested.' },
+      { title: 'Credo TS', body: 'I strengthened cheqd support in Credo TS, including a released fix for revocation-registry-definition resource naming. Contributing directly to the TypeScript framework made that support available where teams already build DID, verifiable-credential, DIDComm and OpenID4VC applications.' },
+      { title: 'ACA-Py', body: 'I also contributed fixes and cheqd integration work to ACA-Py, bringing network support into the Python agent framework used for production credential workflows. Working upstream meant issuers, holders and verifiers could reuse the integration without depending on a private fork.' },
+      { title: 'Interoperability in practice', body: 'Together, the Credo TS and ACA-Py contributions made cheqd usable through two established identity-agent stacks. The work focused on the less visible details that make interoperability durable: predictable resource handling, framework compatibility and integrations that the wider community can review, test and maintain.' },
     ],
   },
   {
@@ -244,6 +244,25 @@ export const projects: Project[] = [
       { title: 'The idea', body: 'Public attestations are useful, but some claims should only be readable when a policy is satisfied. SignXLit keeps the attestation verifiable while encrypting its private payload.' },
       { title: 'How it works', body: 'A user publishes an encrypted attestation through Sign Protocol. Lit Protocol manages decryption conditions such as time, location or smart-contract state. I integrated Lit into the Sign Protocol SDK and built a TypeScript CLI playground for experimenting with access policies.' },
       { title: 'Result', body: 'At ETHGlobal Bangkok, SignXLit won first place for Best Overall Application, third place for Best Use of Private Attestations, and Best Developer Feedback in the Sign Protocol track.' },
+    ],
+  },
+  {
+    slug: 'chain11',
+    title: 'Chain11',
+    eyebrow: 'Decentralized fantasy sports',
+    year: '2026',
+    summary: 'An EVM fantasy-cricket protocol using Chainlink Functions for trust-minimized scores, winner calculation and settlement.',
+    image: '/images/chain11.svg',
+    imageAlt: 'A cricket pitch connected to an oracle and an on-chain prize pool',
+    spokes: ['distributed'],
+    technologies: ['Solidity', 'Base', 'Chainlink Functions', 'Hardhat'],
+    repo: 'https://github.com/DaevMithran/chain11',
+    links: [
+      { label: 'Repository', href: 'https://github.com/DaevMithran/chain11' },
+      { label: 'Chainlink Functions', href: 'https://docs.chain.link/chainlink-functions' },
+    ],
+    sections: [
+      { title: 'Overview', body: 'Chain11 is a decentralized fantasy-cricket protocol for EVM networks, built on Base. Solidity contracts manage contest creation, team submission, validation and prize distribution, while Chainlink Functions retrieves match data and performs score and winner calculation through a decentralized oracle network before results settle on-chain. I designed the contracts around batched operations and compact deployment sizes, allowing a contest to support more than 600 participants while keeping settlement cost independent of participant count.' },
     ],
   },
   {

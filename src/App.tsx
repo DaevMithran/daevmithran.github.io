@@ -160,7 +160,7 @@ function PublicIcon({ type }: { type: 'code' | 'speak' | 'write' }) {
 const workingSet = [
   { label: 'Languages', items: ['Go', 'Rust', 'TypeScript', 'Python', 'Kotlin'] },
   { label: 'Identity', items: ['DIDs', 'W3C VCs', 'OAuth', 'GNAP', 'OpenID4VC', 'Keycloak', 'Logto', 'Supabase Auth'] },
-  { label: 'Distributed systems', items: ['Cosmos SDK', 'Ethereum', 'Solana', 'Polkadot', 'Substrate', 'Hyperledger'] },
+  { label: 'Distributed systems', items: ['Cosmos SDK', 'Ethereum', 'Solana', 'Chainlink', 'Polkadot', 'Substrate', 'Hyperledger'] },
   { label: 'Payments & security', items: ['EMV', 'HSMs', 'PKCS#11', 'mTLS', 'MPC', 'Stripe', 'Key management'] },
   { label: 'Backend & infrastructure', items: ['gRPC', 'REST APIs', 'Kafka', 'OpenSearch', 'CDC', 'PostgreSQL', 'Docker', 'AWS', 'Cloudflare'] },
 ]
